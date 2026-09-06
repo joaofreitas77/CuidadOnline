@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Expo and generated builds
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+/android/
+/ios/
+.kotlin/
+.metro-health-check*
+*.tsbuildinfo
+coverage/
+
+# Secrets and local environment (only sanitized examples may be committed)
+.env
+.env.*
+!.env.example
+!.env.*.example
+.npmrc
+credentials.json
+secrets/
+*.pem
+*.key
+*.jks
+*.keystore
+*.p8
+*.p12
+*.pfx
+*.mobileprovision
+
+# Logs and temporary files
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.orig
+*.orig.*
+*.tmp
+*.bak
+*.swp
+
+# Local editor, assistant and OS settings
+.vscode/
+.idea/
+.claude/
+CLAUDE.md
+.DS_Store
+Thumbs.db
+Desktop.ini
