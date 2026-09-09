@@ -48,3 +48,11 @@ Validação inicial: 5 testes de formulário passaram e o build web foi gerado. 
 ## Arquivos versionados
 
 O repositório inclui código, imagens do app, testes, configurações compartilhadas e package-lock.json. Dependências instaladas, builds, caches, logs, credenciais e configurações locais ficam fora do Git. Arquivos .env.example só devem conter valores fictícios. Variáveis EXPO_PUBLIC_ ficam visíveis no aplicativo e nunca devem conter segredos.
+
+### Tema do site
+
+A lâmpada no header alterna claro/escuro em todas as seções. A preferência é salva no navegador e sincronizada entre abas; login e cadastro usam claro sem apagar a escolha. Sem armazenamento disponível, a alternância continua funcionando durante a visita.
+
+Novas telas devem ficar sob `ThemeProvider` e consumir `useTheme()` de `src/theme.js`: `C` fornece as cores semânticas, `s` os estilos compartilhados e `mode` o tema ativo. Use essas cores em vez de cores fixas para que novas telas acompanhem a escolha global.
+
+Referências: https://vercel.com/geist/theme-switcher e https://mui.com/material-ui/customization/dark-mode/.
